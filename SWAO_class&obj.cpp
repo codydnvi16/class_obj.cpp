@@ -1,6 +1,6 @@
+// Swapping of numbers 
 #include<iostream>
 using namespace std;
-
 
 class swapping
 {
@@ -20,7 +20,7 @@ class swapping
       b=temp;
       cout <<"after swap value of a is:" < <a  <<endl;
      cout << "after swap value of b is:" << b <<endl;
-    // cout << "value is:"<< temp<<endl;
+    
   }
     
 };
