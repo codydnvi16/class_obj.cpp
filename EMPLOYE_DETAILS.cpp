@@ -1,26 +1,25 @@
 
-
-
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
+// create class as emplyee
 class employee 
 {
-  
+// class members
   string name;
   int id;
   float salary;
   
   public:
-  
-  void getDetails(){
+ // class methods
+
+      void getDetails(){
       cout <<"Enter Name of employ:"<<endl;
       cin>>name;
       cout<<"Enter your Id:"<<endl;
       cin>>id;
       cout<<"Enter your salary:"<<endl;
   }
-  void displayDetails()
+     void displayDetails()
   {
       cout << "Employee Details"<<endl;
       cout <<"Name:"<<name<<endl;
@@ -29,9 +28,8 @@ class employee
   }
 };
 
-
 int main() {
-	// your code goes here
+	// create object as details
 employee details;
 details.getDetails();
 details.displayDetails();
