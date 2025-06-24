@@ -1,13 +1,15 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
+// create class as rectangle
 class rectangle
 {
-     int length,width;//class members
-public:
+// class members
+     int length,width;
 
+public:
+//class methods dimension and totL
     void dimension()
-{  //class methods dimension and totL  
+{  
     cin>> length;
     cin>>width;
 }
@@ -23,6 +25,6 @@ int main()
 	dim.dimension();
 	
 	int area = dim.totL();
-	cout <<"area of rect"<< area << endl;
+	cout <<"area of rect:"<< area << endl;
 return 0;
 }
