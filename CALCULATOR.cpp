@@ -1,18 +1,18 @@
-
-#include <bits/stdc++.h>
+// create a program of calculating of number all operations in one
+#include <iostream>
 using namespace std;
-
+// create class of calculator
 class calculator 
 {
   float num1,num2;
-  
-  public:
-   void getnm()
+
+public: // access specifier as public
+     void getnm()
    {
        cin>>num1;
        cin>>num2;
    }
-  void add ()
+    void add ()
   {
       cout <<"addition is"<< num1+num2 << endl;
   }
@@ -30,13 +30,13 @@ class calculator
 };
 
 int main() {
-	// your code goes here
-calculator obj;
-obj.getnm();
-obj.add();
-obj.subtract();
-obj.multiplication();
-obj.division();
+	// creat object of class
+calculator cal;
+cal.getnm();
+cal.add();
+cal.subtract();
+cal.multiplication();
+cal.division();
 return 0;
 }
 
