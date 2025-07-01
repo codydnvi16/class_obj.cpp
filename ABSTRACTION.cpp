@@ -1,22 +1,22 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
+// THIs is the program of using Abstration ad create Backaccount details code
 class bankaccount{
- private:
-   string accholder;
-   int accno;
-   double balance;
- public:
-    void createacc(string nm, int no, double b){
+private:
+    string accholder;
+    int accno;
+    double balance;
+public:
+           void createacc(string nm, int no, double b){
         accholder=nm;
         accno=no;
         balance=b;
     }
-    void deposite(double amt){
+          void deposite(double amt){
         balance +=amt;
         cout<<"deposite"<<amt<<" "<<"new balance"<<balance<<endl;
     }
-    void withdraw(double amt)
+         void withdraw(double amt)
      {
         if ( amt > balance){
             cout<<"insuffient"<<endl;
@@ -25,7 +25,7 @@ class bankaccount{
              cout<<"withdraw::"<< amt<<" "<<"new amt:"<< balance<<endl;
         }
     }
-    double getbalance()
+      double getbalance()
     {
          return balance;
     }
